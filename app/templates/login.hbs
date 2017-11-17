@@ -1,0 +1,41 @@
+
+<div class="full-height valign-wrapper">
+	<div class="row full-width">
+		<div class="col s ">
+			<div class="card">
+				<div class="card-content">
+					<form {{action 'login'  username password on='submit'}}>
+						<div class="card-title center-align">
+							Ventana de <strong>administrador</strong>
+						</div>
+						<br>
+						<div class="card-title">Inicia sesión</div>
+						{{input
+							type='text'
+							value=username
+							placeholder='Correo de usuario'
+							required='true'
+						}}
+						<br>
+						{{input
+							type='password'
+							value=password
+							placeholder='Contraseña'
+							required='true'
+						}}
+						<br>
+						<button class="btn blue full-width   {{if isLoggingIn 'disabled' ''}}" type="submit" onclick="Materialize.toast('Estamos verificando los datos', 4000)">
+							{{#if isLoggingIn}}
+								Iniciando sesión...
+							{{else}}
+								Inicia sesión
+							{{/if}}
+						</button>
+					</form>
+					<br>
+					<p class="center-align red-text text-darken-2">{{errorMessage}}</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

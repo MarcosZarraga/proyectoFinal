@@ -1,0 +1,20 @@
+
+{{outlet}}
+
+<div class="row">
+	<div class="col s2">
+		{{volver-main}}
+	</div>	
+	<form {{action 'createNewArea' on='submit'}}>
+		<div class="col s8">
+			<h5>Crear nueva Area</h5>
+			<label>Nombre de la area</label>
+			{{input type='text' value=model.name}}
+			<label>Informacion del Area</label>
+			{{input type='text' value=model.info}}
+			<label>Ubicacion</label>
+			{{input type='text' value=model.ubication}}
+			<button type='submit' class="waves-effect waves-light btn">Crear nueva area</button>
+		</div>
+	</form>
+</div>
