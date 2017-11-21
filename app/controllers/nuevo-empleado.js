@@ -2,12 +2,11 @@ import Ember from 'ember';
 
 export default Ember.Controller.extend({
 		actions : {
-		createNewReport(autor, grade, review ){
-			console.log(review);
+		createNewEmpleado(nombre, areas){
 			this.get('model').save().then(()=>{
 				swal(
   					'Correcto',
-  					'Reporte creado exitosamente',
+  					'Empleado añadido exitosamente',
   					'success'
 			);
 				this.transitionToRoute('main');

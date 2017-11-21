@@ -14,7 +14,7 @@ export default Ember.Controller.extend({
 			
 		},
 		logOut(){
-			debugger;
+			this.transitionToRoute('login')
 		}
 	}
 });

@@ -14,6 +14,7 @@ Router.map(function() {
   this.route('lista-areas');
   this.route('nueva-area');
   this.route('nuevo-reporte');
+  this.route('nuevo-empleado');
 });
 
 export default Router;

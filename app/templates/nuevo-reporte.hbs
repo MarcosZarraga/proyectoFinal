@@ -12,10 +12,9 @@
 			{{input type='text' value=model.autor}}
 			<label>Calificacion asignada</label>
 			{{input type='number' value= model.grade}}
-			<div class="input-field col s12">       			
-          		<textarea  class="materialize-textarea" >{{input type='text' value=model.preview}}</textarea>
-          		<label for="textarea1">Redacta el reporte aquí</label>
-       		</div>
+          	<label >Redacta el reporte aquí</label>
+			{{input type='text' value=model.review}}
+       		
      		<button  class="waves-effect waves-light btn">Crear nuevo reporte</button>
 		</div>
 	</form>
