@@ -1,7 +1,7 @@
 {{yield}}
 	
-	<form {{action "goToMain" on='submit'}}>
+	
 		<button class="waves-effect waves-light btn red">
-			Volver al Inicio
+			{{#link-to 'main'}}Volver al Inicio{{/link-to}}
 		</button>
-	</form>
+	

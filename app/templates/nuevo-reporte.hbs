@@ -1,0 +1,23 @@
+{{outlet}}
+<div class="row">
+	<div class="col s2">
+		{{volver-main}}
+	</div>	
+
+
+	<form {{action 'createNewReport' on='submit'}}>
+		<div class="col s8">
+			<h5>Crear nuevo Reporte</h5>
+			<label>Nombre de quien realiza el reporte</label>
+			{{input type='text' value=model.autor}}
+			<label>Calificacion asignada</label>
+			{{input type='number' value= model.grade}}
+			<div class="input-field col s12">       			
+          		<textarea  class="materialize-textarea" >{{input type='text' value=model.preview}}</textarea>
+          		<label for="textarea1">Redacta el reporte aquí</label>
+       		</div>
+     		<button  class="waves-effect waves-light btn">Crear nuevo reporte</button>
+		</div>
+	</form>
+
+</div>

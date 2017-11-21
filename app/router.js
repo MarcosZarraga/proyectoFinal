@@ -13,6 +13,7 @@ Router.map(function() {
   this.route('lista-empleados');
   this.route('lista-areas');
   this.route('nueva-area');
+  this.route('nuevo-reporte');
 });
 
 export default Router;
