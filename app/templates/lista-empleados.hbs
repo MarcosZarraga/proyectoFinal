@@ -2,7 +2,9 @@
 <div class="row">
 	<div class="col s2">
 		{{volver-main}}
-		<button class="waves-effect waves-light btn blue"{{action 'goToNuevoEmpleado'}}> Agregar un empleado </button>
+      <div class="fixed-action-btn">
+      <button class="btn-floating btn-large "{{action 'goToNuevoEmpleado'}}>Agregar</button>
+    </div>
 	</div>	
 	<div class="col s10">
 		{{#each model as |empleado|}}

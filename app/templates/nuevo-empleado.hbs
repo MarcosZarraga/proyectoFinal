@@ -7,9 +7,9 @@
 		<div class="col s8">
 			<h5>Añadir nuevo empleado</h5>
 			<label>Nombre del empleado</label>
-			{{input type='text' value=model.nombre}}
+			{{input required='true' type='text' value=model.nombre}}
 			<label>Areas asignadas</label>
-			{{input type='text' value=model.areas}}
+			{{input required='true' type='text' value=model.areas.name}}
 			<button type='submit' class="waves-effect waves-light btn">Añadir empleado</button>
 		</div>
 	</form>

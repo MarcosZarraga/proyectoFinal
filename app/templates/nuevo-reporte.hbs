@@ -9,11 +9,13 @@
 		<div class="col s8">
 			<h5>Crear nuevo Reporte</h5>
 			<label>Nombre de quien realiza el reporte</label>
-			{{input type='text' value=model.autor}}
+			{{input required='true' type='text' value=model.admin.nombre}}
 			<label>Calificacion asignada</label>
-			{{input type='number' value= model.grade}}
+			{{input required='true' type='number' value= model.grade}}
           	<label >Redacta el reporte aquí</label>
-			{{input type='text' value=model.review}}
+			{{input required='true' type='text' value=model.review}}
+ {{!--          	<label >Area que se califica</label>
+			{{input required='true' type='text' value=model.areaEvaluated.name}} --}}
        		
      		<button  class="waves-effect waves-light btn">Crear nuevo reporte</button>
 		</div>

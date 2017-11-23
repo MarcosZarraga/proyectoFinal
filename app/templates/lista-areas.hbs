@@ -3,7 +3,10 @@
 <div class="row">
 	<div class="col s2">
 		{{volver-main}}
-		<button class="waves-effect waves-light btn blue"{{action 'goToNuevaArea'}}> Crear nueva Area </button>
+    <div class="fixed-action-btn">
+      <button class="btn-floating btn-large "{{action 'goToNuevaArea'}}> Crear</button>
+    </div>
+		
 	</div>
 	<div class="col s10">
 		{{#each model as |area|}}

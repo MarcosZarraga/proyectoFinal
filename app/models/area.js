@@ -6,4 +6,5 @@ export default DS.Model.extend({
 	tasks : DS.hasMany('task'),
 	info : DS.attr('string'),
 	ubication: DS.attr('string'),
+	reportes: DS.hasMany('reporte')
 });
