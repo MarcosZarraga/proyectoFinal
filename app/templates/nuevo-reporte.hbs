@@ -4,12 +4,16 @@
 		{{volver-main}}
 	</div>	
 
-
 	<form {{action 'createNewReport' on='submit'}}>
 		<div class="col s8">
 			<h5>Crear nuevo Reporte</h5>
-			<label>Nombre de quien realiza el reporte</label>
-			{{input required='true' type='text' value=model.admin.nombre}}
+			<label>Selecciona un admin</label>
+			{{#each admins as |admin|}}
+				<p><a {{action 'selectAdmin' admin on='click'}}>{{admin.autor}}</a></p>
+			{{/each}}
+			<p>Admin seleccionado: {{model.autor.autor}}</p>
+			{{!-- <label>Nombre de quien realiza el reporte</label>
+			{{input required='true' type='text' value=model.admin.nombre}} --}}
 			<label>Calificacion asignada</label>
 			{{input required='true' type='number' value= model.grade}}
           	<label >Redacta el reporte aquí</label>
